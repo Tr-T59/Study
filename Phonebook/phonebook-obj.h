@@ -1,6 +1,5 @@
 //phonebook header
 
-#include <iostream>
 #include <string>
 
 using namespace std;
@@ -12,4 +11,7 @@ public:
     string home_number;
     string work_number;
     string personal_number;
+    string details;
+    
+
 };
