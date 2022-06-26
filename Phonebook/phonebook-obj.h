@@ -12,6 +12,4 @@ public:
     string work_number;
     string personal_number;
     string details;
-    
-
 };
