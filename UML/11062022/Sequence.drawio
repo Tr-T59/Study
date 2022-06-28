@@ -1,0 +1,174 @@
+<mxfile host="65bd71144e">
+    <diagram id="Zq5QN-lZD0ZNukBJ03V2" name="Page-1">
+        <mxGraphModel dx="1139" dy="579" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="21" value="Alternate" style="shape=umlFrame;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="10" width="785" height="340" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value=":ATM" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+                    <mxGeometry x="320" y="40" width="120" height="280" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value=":Bank" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+                    <mxGeometry x="560" y="40" width="120" height="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="Cash Withdraw" style="endArrow=open;dashed=1;html=1;endFill=0;" edge="1" parent="1" source="6" target="8">
+                    <mxGeometry x="-0.0033" y="-10" width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="130" y="280" as="sourcePoint"/>
+                        <mxPoint x="160" y="230" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="200" y="240"/>
+                        </Array>
+                        <mxPoint x="1" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="8" value="" style="shape=umlLifeline;participant=umlActor;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;verticalAlign=top;spacingTop=36;outlineConnect=0;" vertex="1" parent="1">
+                    <mxGeometry x="160" y="30" width="20" height="300" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="Cash Withdraw + Value" style="endArrow=classic;html=1;" edge="1" parent="1" source="8" target="6">
+                    <mxGeometry x="0.0033" y="10" width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="390" y="220" as="sourcePoint"/>
+                        <mxPoint x="350" y="170" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="280" y="180"/>
+                        </Array>
+                        <mxPoint x="1" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="12" value="Check Balance" style="endArrow=classic;html=1;" edge="1" parent="1" source="6" target="7">
+                    <mxGeometry x="0.0042" y="10" width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="390" y="220" as="sourcePoint"/>
+                        <mxPoint x="440" y="170" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="500" y="200"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="13" value="Request PIN" style="endArrow=classic;html=1;dashed=1;" edge="1" parent="1" source="6" target="8">
+                    <mxGeometry x="-0.0033" y="-10" width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="330" y="220" as="sourcePoint"/>
+                        <mxPoint x="440" y="170" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="230" y="90"/>
+                        </Array>
+                        <mxPoint x="1" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="14" value="Insert PIN" style="endArrow=classic;html=1;" edge="1" parent="1" source="8" target="6">
+                    <mxGeometry x="0.0033" y="10" width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="110" y="120" as="sourcePoint"/>
+                        <mxPoint x="330" y="120" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="280" y="110"/>
+                        </Array>
+                        <mxPoint x="1" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="15" value="Validation Request" style="endArrow=classic;html=1;" edge="1" parent="1" source="6" target="7">
+                    <mxGeometry x="0.0042" y="10" width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="390" y="220" as="sourcePoint"/>
+                        <mxPoint x="440" y="170" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="500" y="130"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="17" value="Validated" style="endArrow=classic;html=1;dashed=1;" edge="1" parent="1" source="7" target="6">
+                    <mxGeometry x="-0.0042" y="-10" width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="390" y="220" as="sourcePoint"/>
+                        <mxPoint x="440" y="170" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="510" y="150"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="18" value="Menu" style="endArrow=classic;html=1;dashed=1;" edge="1" parent="1" source="6" target="8">
+                    <mxGeometry x="-0.0042" y="-10" width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="370" y="160" as="sourcePoint"/>
+                        <mxPoint x="130" y="160" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="260.5" y="160"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="19" value="Validated" style="endArrow=classic;html=1;dashed=1;" edge="1" parent="1" source="7" target="6">
+                    <mxGeometry x="-0.0042" y="-10" width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="629.5" y="160" as="sourcePoint"/>
+                        <mxPoint x="389.5" y="160" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="510" y="220"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="22" value="" style="endArrow=none;dashed=1;html=1;strokeWidth=3;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="7.5" y="260" as="sourcePoint"/>
+                        <mxPoint x="807.5" y="260" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="23" value="[Validator: OK]" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="50" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="[Validator:&lt;br&gt;isNotEnoughCash&amp;nbsp; == 1]" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="20" y="270" width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="Validator" style="endArrow=classic;html=1;strokeWidth=1;" edge="1" parent="1" source="7" target="7">
+                    <mxGeometry x="-0.4975" y="10" width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="650" y="140" as="sourcePoint"/>
+                        <mxPoint x="700" y="90" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="710" y="200"/>
+                            <mxPoint x="710" y="220"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="27" value="Validator" style="endArrow=classic;html=1;strokeWidth=1;" edge="1" parent="1" source="7" target="7">
+                    <mxGeometry x="-0.4975" y="10" width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="629.5" y="120" as="sourcePoint"/>
+                        <mxPoint x="629.5" y="160" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="710" y="130"/>
+                            <mxPoint x="710" y="150"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="28" value="Decline: Not enough cash" style="endArrow=classic;html=1;strokeWidth=1;dashed=1;" edge="1" parent="1" source="7" target="6">
+                    <mxGeometry x="-0.0042" y="-10" width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="390" y="220" as="sourcePoint"/>
+                        <mxPoint x="480" y="310" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="500" y="290"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="29" value="Decline: Not enough cash" style="endArrow=classic;html=1;strokeWidth=1;dashed=1;" edge="1" parent="1" source="6" target="8">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="629.5" y="320" as="sourcePoint"/>
+                        <mxPoint x="389.5" y="320" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="280" y="310"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="32" value="" style="shape=umlDestroy;whiteSpace=wrap;html=1;strokeWidth=3;" vertex="1" parent="1">
+                    <mxGeometry x="155" y="320" width="30" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="" style="shape=umlDestroy;whiteSpace=wrap;html=1;strokeWidth=3;" vertex="1" parent="1">
+                    <mxGeometry x="365" y="310" width="30" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" value="" style="shape=umlDestroy;whiteSpace=wrap;html=1;strokeWidth=3;" vertex="1" parent="1">
+                    <mxGeometry x="605" y="290" width="30" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
