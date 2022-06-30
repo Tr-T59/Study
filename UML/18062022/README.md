@@ -1,0 +1,1 @@
+# Activity проверено, Statechart на проверке.
