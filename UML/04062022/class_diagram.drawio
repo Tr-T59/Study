@@ -1,19 +1,19 @@
 <mxfile host="65bd71144e">
     <diagram id="1oJKiafGPL3h_79Cd2n1" name="Page-1">
-        <mxGraphModel dx="1139" dy="579" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="1139" dy="564" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="76" style="edgeStyle=none;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="2" target="71">
+                <mxCell id="76" style="edgeStyle=none;html=1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;" parent="1" source="31" target="71" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="2" value="Container" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
                     <mxGeometry x="80" y="40" width="310" height="186" as="geometry"/>
                 </mxCell>
-                <mxCell id="3" value="+ Value: Data" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="2" vertex="1">
+                <mxCell id="3" value="+ Data: value" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="2" vertex="1">
                     <mxGeometry y="26" width="310" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="29" value="+ ContainerVolume: volume" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="2" vertex="1">
+                <mxCell id="29" value="+ ContainerVolume: double" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="2" vertex="1">
                     <mxGeometry y="56" width="310" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="4" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="2" vertex="1">
@@ -31,10 +31,10 @@
                 <mxCell id="18" value="Data" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
                     <mxGeometry x="80" y="240" width="140" height="78" as="geometry"/>
                 </mxCell>
-                <mxCell id="19" value="+ volume: Volume" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="18" vertex="1">
+                <mxCell id="19" value="+ volume: double" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="18" vertex="1">
                     <mxGeometry y="26" width="140" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="20" value="+ hash: Hash" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="18" vertex="1">
+                <mxCell id="20" value="+ hash: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="18" vertex="1">
                     <mxGeometry y="52" width="140" height="26" as="geometry"/>
                 </mxCell>
                 <mxCell id="24" style="edgeStyle=elbowEdgeStyle;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.02;entryY=0.17;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=diamond;startFill=1;" parent="1" source="3" target="18" edge="1">
@@ -53,135 +53,141 @@
                 <mxCell id="32" value="- destination: Container" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="31" vertex="1">
                     <mxGeometry y="26" width="160" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="39" value="Container: internal" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" parent="1" vertex="1">
-                    <mxGeometry x="495" y="190" width="170" height="100" as="geometry"/>
-                </mxCell>
-                <mxCell id="40" value="Container: DVD" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" parent="1" vertex="1">
-                    <mxGeometry x="330" y="600" width="120" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="42" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="39" edge="1">
-                    <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="390" y="320" as="sourcePoint"/>
-                        <mxPoint x="580" y="360" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="43" value="Data" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="520" y="226" width="120" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="44" value="DataIO: DVD" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="520" y="360" width="120" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="45" value="check_volume(DVD.volume, Data.volume)" style="ellipse;whiteSpace=wrap;html=1;fontSize=9;" parent="1" vertex="1">
-                    <mxGeometry x="520" y="460" width="120" height="40" as="geometry"/>
-                </mxCell>
-                <mxCell id="47" value="" style="endArrow=classic;html=1;fontSize=9;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="44" target="45" edge="1">
-                    <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="390" y="620" as="sourcePoint"/>
-                        <mxPoint x="440" y="570" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="49" value="Data" style="rounded=0;whiteSpace=wrap;html=1;fontSize=9;" parent="1" vertex="1">
-                    <mxGeometry x="355" y="620" width="70" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="51" value="" style="rhombus;whiteSpace=wrap;html=1;fontSize=9;" parent="1" vertex="1">
-                    <mxGeometry x="542.5" y="530" width="75" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="52" value="" style="endArrow=classic;html=1;fontSize=9;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="45" target="51" edge="1">
-                    <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="390" y="520" as="sourcePoint"/>
-                        <mxPoint x="440" y="470" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="55" value="" style="endArrow=classic;html=1;fontSize=9;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="51" target="40" edge="1">
-                    <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="390" y="520" as="sourcePoint"/>
-                        <mxPoint x="440" y="470" as="targetPoint"/>
-                        <Array as="points">
-                            <mxPoint x="390" y="545"/>
-                        </Array>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="56" value="[if DVD.volume &amp;gt; Data.volume]" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;" parent="1" vertex="1">
-                    <mxGeometry x="390" y="520" width="140" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="57" value="Message {Fail}" style="rounded=0;whiteSpace=wrap;html=1;fontSize=9;verticalAlign=top;" parent="1" vertex="1">
-                    <mxGeometry x="680" y="640" width="120" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="58" value="" style="endArrow=classic;html=1;fontSize=9;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="40" target="59" edge="1">
-                    <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="680" y="600" as="sourcePoint"/>
-                        <mxPoint x="390" y="720" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="59" value="check_hash(DVD.hash, Data.hash)" style="ellipse;whiteSpace=wrap;html=1;fontSize=9;" parent="1" vertex="1">
-                    <mxGeometry x="330" y="710" width="120" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="60" value="" style="endArrow=classic;html=1;fontSize=9;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.45;entryY=-0.033;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="51" target="57" edge="1">
-                    <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="500" y="690" as="sourcePoint"/>
-                        <mxPoint x="550" y="640" as="targetPoint"/>
-                        <Array as="points">
-                            <mxPoint x="734" y="545"/>
-                        </Array>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="61" value="[if DVD.volume &amp;lt; Data.volume]" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;" parent="1" vertex="1">
-                    <mxGeometry x="617.5" y="520" width="140" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="62" value="" style="rhombus;whiteSpace=wrap;html=1;fontSize=9;" parent="1" vertex="1">
-                    <mxGeometry x="530" y="735" width="75" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="63" value="" style="endArrow=classic;html=1;fontSize=9;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="59" target="62" edge="1">
-                    <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="500" y="690" as="sourcePoint"/>
-                        <mxPoint x="550" y="640" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="64" value="" style="endArrow=classic;html=1;fontSize=9;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="62" target="57" edge="1">
-                    <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="500" y="690" as="sourcePoint"/>
-                        <mxPoint x="550" y="640" as="targetPoint"/>
-                        <Array as="points">
-                            <mxPoint x="568" y="655"/>
-                        </Array>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="65" value="" style="endArrow=none;html=1;fontSize=9;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="57" edge="1">
-                    <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="500" y="690" as="sourcePoint"/>
-                        <mxPoint x="820" y="670" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="66" value="Message {Sucess}" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;" parent="1" vertex="1">
-                    <mxGeometry x="690" y="670" width="100" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="67" value="" style="endArrow=classic;html=1;fontSize=9;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="62" target="66" edge="1">
-                    <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="500" y="690" as="sourcePoint"/>
-                        <mxPoint x="550" y="640" as="targetPoint"/>
-                        <Array as="points">
-                            <mxPoint x="568" y="840"/>
-                            <mxPoint x="740" y="840"/>
-                        </Array>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="68" value="[if DVD.hash == Data.hash]" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;" parent="1" vertex="1">
-                    <mxGeometry x="590" y="810" width="140" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="69" value="else" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;" parent="1" vertex="1">
-                    <mxGeometry x="595" y="630" width="70" height="30" as="geometry"/>
-                </mxCell>
                 <mxCell id="71" value="Messager" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fontSize=9;" parent="1" vertex="1">
-                    <mxGeometry x="230" y="240" width="160" height="86" as="geometry"/>
-                </mxCell>
-                <mxCell id="72" value="+ Message: string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=9;" parent="71" vertex="1">
-                    <mxGeometry y="26" width="160" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="73" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;fontSize=9;" parent="71" vertex="1">
-                    <mxGeometry y="52" width="160" height="8" as="geometry"/>
+                    <mxGeometry x="280" y="280" width="160" height="52" as="geometry"/>
                 </mxCell>
                 <mxCell id="74" value="+ Print(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=9;" parent="71" vertex="1">
-                    <mxGeometry y="60" width="160" height="26" as="geometry"/>
+                    <mxGeometry y="26" width="160" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="77" value="" style="group;fontStyle=1" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="190" y="410" width="550" height="670" as="geometry"/>
+                </mxCell>
+                <mxCell id="78" value="" style="edgeStyle=none;html=1;" edge="1" parent="77" source="39" target="44">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="39" value="Container: internal" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" parent="77" vertex="1">
+                    <mxGeometry x="165" width="170" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" value="Container: DVD" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" parent="77" vertex="1">
+                    <mxGeometry y="410" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="77" source="39" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="60" y="130" as="sourcePoint"/>
+                        <mxPoint x="250" y="170" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="43" value="Data" style="rounded=0;whiteSpace=wrap;html=1;" parent="77" vertex="1">
+                    <mxGeometry x="190" y="36" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="44" value="DataIO: DVD" style="rounded=0;whiteSpace=wrap;html=1;" parent="77" vertex="1">
+                    <mxGeometry x="190" y="170" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="45" value="check_volume(DVD.volume, Data.volume)" style="ellipse;whiteSpace=wrap;html=1;fontSize=9;" parent="77" vertex="1">
+                    <mxGeometry x="190" y="270" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" value="" style="endArrow=classic;html=1;fontSize=9;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="77" source="44" target="45" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="60" y="430" as="sourcePoint"/>
+                        <mxPoint x="110" y="380" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="49" value="Data" style="rounded=0;whiteSpace=wrap;html=1;fontSize=9;" parent="77" vertex="1">
+                    <mxGeometry x="25" y="430" width="70" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="51" value="" style="rhombus;whiteSpace=wrap;html=1;fontSize=9;" parent="77" vertex="1">
+                    <mxGeometry x="212.5" y="340" width="75" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="52" value="" style="endArrow=classic;html=1;fontSize=9;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="77" source="45" target="51" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="60" y="330" as="sourcePoint"/>
+                        <mxPoint x="110" y="280" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="56" value="[if DVD.volume &amp;gt; Data.volume]" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;" parent="77" vertex="1">
+                    <mxGeometry x="60" y="330" width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="57" value="Message {Fail}" style="rounded=0;whiteSpace=wrap;html=1;fontSize=9;verticalAlign=top;" parent="77" vertex="1">
+                    <mxGeometry x="350" y="450" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="58" value="" style="endArrow=classic;html=1;fontSize=9;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="77" source="40" target="59" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="350" y="410" as="sourcePoint"/>
+                        <mxPoint x="60" y="530" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="59" value="check_hash(DVD.hash, Data.hash)" style="ellipse;whiteSpace=wrap;html=1;fontSize=9;" parent="77" vertex="1">
+                    <mxGeometry y="520" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="60" value="" style="endArrow=classic;html=1;fontSize=9;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.45;entryY=-0.033;entryDx=0;entryDy=0;entryPerimeter=0;" parent="77" source="51" target="57" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="170" y="500" as="sourcePoint"/>
+                        <mxPoint x="220" y="450" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="404" y="355"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="61" value="[if DVD.volume &amp;lt; Data.volume]" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;" parent="77" vertex="1">
+                    <mxGeometry x="287.5" y="330" width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="62" value="" style="rhombus;whiteSpace=wrap;html=1;fontSize=9;" parent="77" vertex="1">
+                    <mxGeometry x="200" y="545" width="75" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="63" value="" style="endArrow=classic;html=1;fontSize=9;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="77" source="59" target="62" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="170" y="500" as="sourcePoint"/>
+                        <mxPoint x="220" y="450" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="64" value="" style="endArrow=classic;html=1;fontSize=9;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" parent="77" source="62" target="57" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="170" y="500" as="sourcePoint"/>
+                        <mxPoint x="220" y="450" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="238" y="465"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="65" value="" style="endArrow=none;html=1;fontSize=9;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="77" source="57" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="170" y="500" as="sourcePoint"/>
+                        <mxPoint x="490" y="480" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="66" value="Message {Sucess}" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;" parent="77" vertex="1">
+                    <mxGeometry x="360" y="480" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="67" value="" style="endArrow=classic;html=1;fontSize=9;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="77" source="62" target="66" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="170" y="500" as="sourcePoint"/>
+                        <mxPoint x="220" y="450" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="238" y="650"/>
+                            <mxPoint x="410" y="650"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="68" value="[if DVD.hash == Data.hash]" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;" parent="77" vertex="1">
+                    <mxGeometry x="260" y="620" width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="69" value="else" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;" parent="77" vertex="1">
+                    <mxGeometry x="265" y="440" width="70" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="55" value="" style="endArrow=classic;html=1;fontSize=9;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="77" source="51" target="40" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="390" y="520" as="sourcePoint"/>
+                        <mxPoint x="440" y="470" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="60" y="355"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="80" value="&lt;b&gt;&lt;font style=&quot;font-size: 18px&quot;&gt;*/&lt;/font&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="77">
+                    <mxGeometry x="410" y="600" width="140" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="79" value="&lt;b&gt;&lt;font style=&quot;font-size: 18px&quot;&gt;/*&lt;/font&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="274" y="376" width="140" height="70" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
